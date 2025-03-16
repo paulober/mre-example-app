@@ -3,7 +3,7 @@
 ## Folder structure
 
 |Folder|Description|
-|-|-|-|
+|-|-|
 |cmake|Build config files|
 |src|Main code for app|Static liblary|
 |resources|Place resources you want to bundle with your app here|
