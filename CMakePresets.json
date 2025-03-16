@@ -1,0 +1,23 @@
+{
+    "version": 3,
+    "cmakeMinimumRequired": {
+        "major": 4,
+        "minor": 0,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "mre-release",
+            "description": "Build for ARM using the GNU ARM toolchain",
+            "generator": "Ninja",
+            "cacheVariables": {
+                "CMAKE_TOOLCHAIN_FILE": "${workspaceFolder}/cmake/toolchain-arm-none-eabi.cmake",
+                "TOOLCHAIN_PREFIX": "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1",
+                "MRE_SDK": "C:/Program Files (x86)/MRE SDK V3.0.00",
+                "CMAKE_BUILD_TYPE": "Release",
+                "TinyMRESDK": "${userHome}/TinyMRESDK",
+                "VXP_DEV_SIGN": "${userHome}/goprojects/vxp-dev-sign/vxp-dev-sign.exe"
+            }
+        }
+    ]
+}
