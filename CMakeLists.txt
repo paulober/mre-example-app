@@ -11,7 +11,6 @@ option(BACKGROUND "App can work background" OFF)
 
 set(MRE_SDK "$ENV{MRE_SDK}" CACHE STRING "MRE SDK dir")
 set(TinyMRESDK "$ENV{TinyMRESDK}" CACHE STRING "TinyMRESDK dir")
-set(VXP_DEV_SIGN "$ENV{VXP_DEV_SIGN}" CACHE STRING "VXP Dev Sign executable")
 
 set(CMAKE_C_STANDARD 99)
 set(CMAKE_C_STANDARD_REQUIRED ON)
@@ -94,16 +93,6 @@ add_custom_target(vxp ALL
         -tapi "${API}"
     DEPENDS ${APP_NAME} resources
 )
-
-
-# === Automatic VXP Signing (Only if target is Phone) ===
-if(${CMAKE_SYSTEM_NAME} STREQUAL Generic)
-    add_custom_command(TARGET vxp POST_BUILD
-        COMMAND "${VXP_DEV_SIGN}" 
-                "${CMAKE_BINARY_DIR}/${APP_NAME}.vxp" "${IMSI}" "-"
-        COMMENT "Signing VXP file in-place with IMSI: ${IMSI}"
-    )
-endif()
 
 # === MoDis Execution (Windows only) ===
 if (WIN32)

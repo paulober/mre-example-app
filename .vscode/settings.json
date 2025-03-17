@@ -6,8 +6,7 @@
         "TOOLCHAIN_PREFIX": "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1",
         "MRE_SDK": "C:/Program Files (x86)/MRE SDK V3.0.00",
         "CMAKE_BUILD_TYPE": "Release",
-        "TinyMRESDK": "${userHome}/TinyMRESDK",
-        "VXP_DEV_SIGN": "${userHome}/goprojects/vxp-dev-sign/vxp-dev-sign.exe"
+        "TinyMRESDK": "${userHome}/TinyMRESDK"
     },
     "cmake.configureOnEdit": true,
     "files.exclude": {

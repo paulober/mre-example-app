@@ -17,7 +17,6 @@
 - [Arm GNU Toolchain](https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads)
 - [MRE SDK](https://archive.org/details/mre-sdk_developer) (for includes, libs and MoDis)
 - [TinyMRESDK](https://github.com/XimikBoda/TinyMRESDK) (For resourse pack and app pack)
-- [vxp-dev-sign](https://github.com/paulober/vxp-dev-sign) (For IMSI signing of the .vxp)
 
 ## How to build?
 ### For phone
