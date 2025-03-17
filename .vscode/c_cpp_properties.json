@@ -1,0 +1,51 @@
+{
+    "version": 4,
+    "configurations": [
+        {
+            "name": "MRE",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:\\Program Files (x86)\\MRE SDK V3.0.00\\include",
+                "C:\\Program Files (x86)\\MRE SDK V3.0.00\\include\\service",
+                "C:\\Program Files (x86)\\MRE SDK V3.0.00\\src\\app\\widget",
+                "C:\\Program Files (x86)\\MRE SDK V3.0.00\\src\\app\\launcher",
+                "C:\\Program Files (x86)\\MRE SDK V3.0.00\\src\\app\\wallpaper",
+                "C:\\Program Files (x86)\\MRE SDK V3.0.00\\src\\app\\screen_lock",
+                "C:\\Program Files (x86)\\MRE SDK V3.0.00\\src\\framework",
+                "C:\\Program Files (x86)\\MRE SDK V3.0.00\\src\\framework\\ui_core\\base",
+                "C:\\Program Files (x86)\\MRE SDK V3.0.00\\src\\framework\\ui_core\\mvc",
+                "C:\\Program Files (x86)\\MRE SDK V3.0.00\\src\\framework\\ui_core\\pme",
+                "C:\\Program Files (x86)\\MRE SDK V3.0.00\\src\\framework\\mmi_core",
+                "C:\\Program Files (x86)\\MRE SDK V3.0.00\\src\\component"
+            ],
+            "defines": [
+                "__MRE_COMPILER_GCC__",
+                "ARM_MATH_CM4",
+                "ARM_EMBEDDED",
+                "MRE_PROJECT"
+            ],
+            "cStandard": "gnu99",
+            "cppStandard": "c++11",
+            "compilerPath": "C:\\Program Files (x86)\\Arm GNU Toolchain arm-none-eabi\\14.2 rel1\\bin\\arm-none-eabi-gcc.exe",
+            "intelliSenseMode": "gcc-arm",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/**",
+                    "C:/Program Files (x86)/MRE SDK V3.0.00/include"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            },
+            "compilerArgs": [
+                "-march=armv5te",
+                "-mthumb",
+                "-mlittle-endian",
+                "-fdata-sections",
+                "-ffunction-sections",
+                "-fpic",
+                "-D__MRE_COMPILER_GCC__"
+            ],
+            "configurationProvider": "ms-vscode.cmake-tools"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "cmake.generator": "Ninja",
+    "cmake.configureOnOpen": true,
+    "cmake.configureSettings": {
+        "CMAKE_TOOLCHAIN_FILE": "${workspaceFolder}/cmake/toolchain-arm-none-eabi.cmake",
+        "TOOLCHAIN_PREFIX": "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1",
+        "MRE_SDK": "C:/Program Files (x86)/MRE SDK V3.0.00",
+        "CMAKE_BUILD_TYPE": "Release",
+        "TinyMRESDK": "${userHome}/TinyMRESDK",
+        "VXP_DEV_SIGN": "${userHome}/goprojects/vxp-dev-sign/vxp-dev-sign.exe"
+    },
+    "cmake.configureOnEdit": true,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "out/": false,
+        "cmake/": false
+    }
+}
