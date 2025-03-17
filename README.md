@@ -4,10 +4,11 @@
 
 |Folder|Description|
 |-|-|
+|.vscode|VS Code cmake Tools config files|
 |cmake|Build config files|
-|src|Main code for app|Static liblary|
+|platform|Some source files to bridge the gap between the MRE SDK and the Toolchain|
 |resources|Place resources you want to bundle with your app here|
-|platform|Some source file to bridge the gap between the MRE SDK and the Toolchain|
+|src|Main code for app|Static liblary|
 
 ## Requirements to build
 
