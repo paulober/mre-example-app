@@ -16,7 +16,7 @@
         "**/.hg": true,
         "**/.DS_Store": true,
         "**/Thumbs.db": true,
-        "out/": false,
-        "cmake/": false
+        "out/": true,
+        "cmake/": true
     }
 }
